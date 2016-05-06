@@ -4,11 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by ${YogenRai} on 3/26/2016.
- *
- * AbstractMarket is Subject
+ * Subject
  */
-public abstract class AbstractMarket {
+public abstract class Market extends Subject {
     Map<String,Double> stockList = new HashMap<String,Double>();
     public Map<String, Double> getStockList() {
         return stockList;
