@@ -3,17 +3,22 @@ package design_patterns.proxy_pattern.lab;
 import design_patterns.proxy_pattern.lab.domain.Account;
 import design_patterns.proxy_pattern.lab.domain.AccountEntry;
 import design_patterns.proxy_pattern.lab.domain.Customer;
+import design_patterns.proxy_pattern.lab.proxies.Timer;
 import design_patterns.proxy_pattern.lab.service.AccountService;
 import design_patterns.proxy_pattern.lab.service.IAccountService;
-import design_patterns.proxy_pattern.lab.service.ProxyAccountService;
 
+import java.lang.reflect.Proxy;
 import java.util.Collection;
 
 
 public class Application {
 	public static void main(String[] args) {
+		IAccountService theAccountService = new AccountService();
 //		IAccountService accountService = new AccountService();
-		IAccountService accountService = (IAccountService) ProxyAccountService.newInstance(new AccountService());
+		ClassLoader cl = IAccountService.class.getClassLoader();
+
+		IAccountService accountService = (IAccountService) Proxy.newProxyInstance(cl, new Class[]{IAccountService.class}, new Timer(theAccountService));
+//		IAccountService accountService = (IAccountService) ProxyAccountService.newInstance(new AccountService());
 		// create 2 accounts;
 		accountService.createAccount(1263862, "Frank Brown");
 		accountService.createAccount(4253892, "John Doe");
