@@ -1,1 +1,0 @@
-Here, as AccountDAO object changes according to the enviroment, i.e. either development or testing, factory can encapsulate all the concrete AccountDAO objects and provide when necessary. 
