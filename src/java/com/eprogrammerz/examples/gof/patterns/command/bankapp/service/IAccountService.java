@@ -1,6 +1,6 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab.service;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp.service;
 
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.Account;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.Account;
 
 import java.util.Collection;
 

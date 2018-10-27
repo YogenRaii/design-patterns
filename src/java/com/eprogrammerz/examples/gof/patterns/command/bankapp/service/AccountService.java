@@ -1,10 +1,10 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab.service;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp.service;
 
 
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.dao.AccountDAO;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.dao.IAccountDAO;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.Account;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.Customer;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.dao.AccountDAO;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.dao.IAccountDAO;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.Account;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.Customer;
 
 import java.util.Collection;
 

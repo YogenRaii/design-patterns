@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.example;
+package com.eprogrammerz.examples.gof.patterns.command.cellphone;
 
 /**
  * ConcreteCommand - The Command for unlocking the phone

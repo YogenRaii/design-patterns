@@ -1,6 +1,6 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp;
 
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands.Command;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.Command;
 
 /**
  * Created by ${YogenRai} on 4/17/2016.

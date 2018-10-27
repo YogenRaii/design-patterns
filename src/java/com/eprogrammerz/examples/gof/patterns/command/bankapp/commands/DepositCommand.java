@@ -1,7 +1,7 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp.commands;
 
 
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.service.IAccountService;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.service.IAccountService;
 
 /**
  * Created by ${YogenRai} on 4/17/2016.

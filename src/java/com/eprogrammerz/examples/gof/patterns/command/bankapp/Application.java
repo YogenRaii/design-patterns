@@ -1,14 +1,14 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp;
 
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands.Command;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands.DepositCommand;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands.TransferCommand;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.commands.WithdrawCommand;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.Account;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.AccountEntry;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain.Customer;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.service.AccountService;
-import com.eprogrammerz.examples.gof.patterns.command_pattern.lab.service.IAccountService;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.Command;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.DepositCommand;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.TransferCommand;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.WithdrawCommand;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.Account;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.AccountEntry;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.domain.Customer;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.service.AccountService;
+import com.eprogrammerz.examples.gof.patterns.command.bankapp.service.IAccountService;
 
 import java.util.Collection;
 

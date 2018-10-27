@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.lab.domain;
+package com.eprogrammerz.examples.gof.patterns.command.bankapp.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;

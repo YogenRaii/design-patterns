@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.command_pattern.example;
+package com.eprogrammerz.examples.gof.patterns.command.cellphone;
 
 import java.util.ArrayList;
 import java.util.List;
