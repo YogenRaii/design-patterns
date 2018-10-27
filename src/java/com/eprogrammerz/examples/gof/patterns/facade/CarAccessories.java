@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.facade_pattern;
+package com.eprogrammerz.examples.gof.patterns.facade;
 
 /**
  * Created by ${YogenRai} on 4/3/2016.
