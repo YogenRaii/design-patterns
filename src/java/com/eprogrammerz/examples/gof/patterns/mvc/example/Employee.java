@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.mvc_pattern.code;
+package com.eprogrammerz.examples.gof.patterns.mvc.example;
 
 /**
  * Model
@@ -24,7 +24,7 @@ public class Employee {
     }
 
     @Override
-    public String toString(){
-        return id+", " + name;
+    public String toString() {
+        return id + ", " + name;
     }
 }

@@ -6,9 +6,9 @@ package com.eprogrammerz.examples.gof.patterns.chainofresponsibility.ordermgmtv2
 public class InternationalOrderHandler extends OrderReceiver {
     @Override
     public void handleOrder(Order order) {
-        if(order.isInternational()){
+        if (order.isInternational()) {
             System.out.println("International Order");
-        }else if(successor != null){
+        } else if (successor != null) {
             successor.handleOrder(order);
         }
     }

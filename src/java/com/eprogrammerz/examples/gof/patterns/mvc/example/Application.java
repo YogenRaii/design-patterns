@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.mvc_pattern.code;
+package com.eprogrammerz.examples.gof.patterns.mvc.example;
 
 /**
  * Client
@@ -10,12 +10,12 @@ public class Application {
         //creating view to display employee information
         View view = new View();
 
-        EmployeeController controller = new EmployeeController(view,employee);
+        EmployeeController controller = new EmployeeController(view, employee);
         controller.updateView();
 
         //updating model
         employee.setName("Hilary Sanders");
-        controller = new EmployeeController(view,employee);
+        controller = new EmployeeController(view, employee);
         controller.updateView();
     }
 }

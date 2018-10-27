@@ -8,22 +8,23 @@ import java.util.List;
  */
 public class MostFavoredCustomerOrderHandler extends OrderReceiver {
 
-    private List<MostValuedCustomer> customers = new ArrayList<MostValuedCustomer>(){
+    private List<MostValuedCustomer> customers = new ArrayList<MostValuedCustomer>() {
         {
             add(new MostValuedCustomer("Yogen"));
             add(new MostValuedCustomer("Rita"));
         }
     };
+
     @Override
     public void handleOrder(Order request) {
         Customer orderingCustomer = request.getCustomer();
-        for (MostValuedCustomer customer:customers){
-            if(customer.getName().equals(orderingCustomer.getName())){
+        for (MostValuedCustomer customer : customers) {
+            if (customer.getName().equals(orderingCustomer.getName())) {
                 System.out.println("Most Valued Customer Chance.");
                 return;
             }
         }
-        if(successor!= null){
+        if (successor != null) {
             successor.handleOrder(request);
         }
     }

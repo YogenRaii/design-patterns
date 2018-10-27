@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.mvc_pattern.code;
+package com.eprogrammerz.examples.gof.patterns.mvc.example;
 
 /**
  * Controller
@@ -13,7 +13,7 @@ public class EmployeeController {
         this.employee = employee;
     }
 
-    public void updateView(){
+    public void updateView() {
         view.printEmployeeInformation(employee);
     }
 }
