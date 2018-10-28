@@ -22,12 +22,12 @@ public class TransferCommand implements Command {
 
     @Override
     public void execute() {
-        accountService.transferFunds(fromAccountNumber,toAccountNumber,amount,description);
+        accountService.transferFunds(fromAccountNumber, toAccountNumber, amount, description);
     }
 
     @Override
     public void undo() {
-        accountService.transferFunds(toAccountNumber,fromAccountNumber,amount,description);
+        accountService.transferFunds(toAccountNumber, fromAccountNumber, amount, description);
     }
 
     @Override

@@ -5,6 +5,8 @@ package com.eprogrammerz.examples.gof.patterns.command.bankapp.commands;
  */
 public interface Command {
     void execute();
+
     void undo();
+
     void redo();
 }

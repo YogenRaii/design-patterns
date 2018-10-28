@@ -18,12 +18,12 @@ public class WithdrawCommand implements Command {
 
     @Override
     public void execute() {
-        accountService.withdraw(accNo,withdrawAmount);
+        accountService.withdraw(accNo, withdrawAmount);
     }
 
     @Override
     public void undo() {
-        accountService.deposit(accNo,withdrawAmount);
+        accountService.deposit(accNo, withdrawAmount);
     }
 
     @Override

@@ -8,16 +8,16 @@ import com.eprogrammerz.examples.gof.patterns.command.bankapp.commands.Command;
 public class Invoker {
     private Command previousCommand;
 
-    public void execute(Command command){
+    public void execute(Command command) {
         previousCommand = command;
         command.execute();
     }
 
-    public void undo(){
+    public void undo() {
         previousCommand.undo();
     }
 
-    public void redo(){
+    public void redo() {
         previousCommand.redo();
     }
 }

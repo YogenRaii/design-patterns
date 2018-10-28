@@ -19,12 +19,12 @@ public class DepositCommand implements Command {
 
     @Override
     public void execute() {
-        accountService.deposit(accNo,depositAmount);
+        accountService.deposit(accNo, depositAmount);
     }
 
     @Override
     public void undo() {
-        accountService.withdraw(accNo,depositAmount);
+        accountService.withdraw(accNo, depositAmount);
     }
 
     @Override

@@ -9,7 +9,7 @@ import java.util.List;
 public class PowerButton {
     private List<Command> commands = new ArrayList<Command>();
 
-    public void pressButton(Command command){
+    public void pressButton(Command command) {
         commands.add(command);  //for undoing capability; optional in this case
         command.execute();
     }
