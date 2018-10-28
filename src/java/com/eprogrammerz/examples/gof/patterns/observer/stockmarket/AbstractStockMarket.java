@@ -7,8 +7,7 @@ import java.util.Map;
 /**
  * Subject
  */
-public class Subject {
-
+public abstract class AbstractStockMarket {
     private List<StockBroker> stockBrokers = new ArrayList<StockBroker>();
 
     public void addStockBroker(StockBroker stockBroker) {
@@ -20,4 +19,8 @@ public class Subject {
             broker.update(stockList);
         }
     }
+
+    public abstract void addStock(String stockSymbol, Double price);
+
+    public abstract void update(String stockSymbol, Double price);
 }
