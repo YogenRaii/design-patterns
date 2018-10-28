@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.observer_pattern.observer_pattern_lab;
+package com.eprogrammerz.examples.gof.patterns.observer.bankapp;
 
 import java.util.Date;
 
@@ -21,7 +21,7 @@ public class AccountEntry {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return date.toString();
     }
 }

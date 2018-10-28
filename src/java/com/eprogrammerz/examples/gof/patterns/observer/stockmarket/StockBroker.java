@@ -1,6 +1,7 @@
-package com.eprogrammerz.examples.gof.patterns.observer_pattern.observer_pattern_hw;
+package com.eprogrammerz.examples.gof.patterns.observer.stockmarket;
 
 import java.util.Map;
+
 /**
  * Observer interface
  */

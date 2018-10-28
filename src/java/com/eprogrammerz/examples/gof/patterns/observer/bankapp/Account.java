@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.observer_pattern.observer_pattern_lab;
+package com.eprogrammerz.examples.gof.patterns.observer.bankapp;
 
 import java.util.List;
 
@@ -54,7 +54,7 @@ public class Account {
     }
 
     @Override
-    public String toString(){
-        return "["+accountNumber+", "+customer+", "+accountEntries+", "+balance+"]";
+    public String toString() {
+        return "[" + accountNumber + ", " + customer + ", " + accountEntries + ", " + balance + "]";
     }
 }

@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.observer_pattern.observer_pattern_lab;
+package com.eprogrammerz.examples.gof.patterns.observer.bankapp;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,17 +13,18 @@ public class AccountService {
 
     private List<SystemService> services = new ArrayList<SystemService>();
 
-    public void addService(SystemService service){
+    public void addService(SystemService service) {
         services.add(service);
     }
 
-    public void createAccount(Account account){
+    public void createAccount(Account account) {
         accountDAO.saveAccount(account);
 
         SystemService emailService = new EmailSender();
         emailService.provideService();
     }
-    public void deposit(long amount,long accNum){
+
+    public void deposit(long amount, long accNum) {
         Account account = accountDAO.loadAccount(accNum);
 
         long newBalance = account.getBalance() + amount;
@@ -36,20 +37,23 @@ public class AccountService {
 
         provideSystemServices();
     }
-    public Long withdraw(){
+
+    public Long withdraw() {
         provideSystemServices();
-        return  null;
+        return null;
     }
-    public void transferFunds(Long amount){
+
+    public void transferFunds(Long amount) {
 
         provideSystemServices();
     }
-    public List<Account> getAllAccount(){
+
+    public List<Account> getAllAccount() {
         return accountDAO.getAccounts();
     }
 
-    public void provideSystemServices(){
-        for(SystemService service:services){
+    public void provideSystemServices() {
+        for (SystemService service : services) {
             service.provideService();
         }
     }
