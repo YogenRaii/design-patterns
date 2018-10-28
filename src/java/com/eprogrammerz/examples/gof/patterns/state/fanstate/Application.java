@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.state_pattern.lab;
+package com.eprogrammerz.examples.gof.patterns.state.fanstate;
 
 /**
  * Client

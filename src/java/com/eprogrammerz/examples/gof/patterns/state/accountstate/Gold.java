@@ -1,13 +1,13 @@
-package com.eprogrammerz.examples.gof.patterns.state_pattern.hw;
+package com.eprogrammerz.examples.gof.patterns.state.accountstate;
 
 /**
  * Created by ${YogenRai} on 4/23/2016.
  */
 public class Gold extends AccountState {
     @Override
-    void computePoints(FFAccount account,int newMiles) {
+    void computePoints(FFAccount account, int newMiles) {
 
-        int numberOfFlights= account.getNumberOfFlights();
+        int numberOfFlights = account.getNumberOfFlights();
         account.setNumberOfFlights(++numberOfFlights);
         int numberOfMiles = 2 * newMiles + account.getNumberOfMiles();//
         account.setNumberOfMiles(numberOfMiles);
@@ -18,7 +18,7 @@ public class Gold extends AccountState {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Gold";
     }
 }

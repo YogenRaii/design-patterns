@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.state_pattern.hw;
+package com.eprogrammerz.examples.gof.patterns.state.accountstate;
 
 /**
  * Created by ${YogenRai} on 4/23/2016.
@@ -16,15 +16,23 @@ public class FFAccount {
     }
 
     public void addFlight(int newMiles) {
-        accountState.computePoints(this,newMiles);
+        accountState.computePoints(this, newMiles);
     }
 
     public int getNumberOfMiles() {
         return numberOfMiles;
     }
 
+    public void setNumberOfMiles(int numberOfMiles) {
+        this.numberOfMiles = numberOfMiles;
+    }
+
     public int getNumberOfFlights() {
         return numberOfFlights;
+    }
+
+    public void setNumberOfFlights(int numberOfFlights) {
+        this.numberOfFlights = numberOfFlights;
     }
 
     public String getAccountNumber() {
@@ -35,19 +43,11 @@ public class FFAccount {
         this.accountNumber = accountNumber;
     }
 
-    public void setNumberOfMiles(int numberOfMiles) {
-        this.numberOfMiles = numberOfMiles;
-    }
-
-    public void setNumberOfFlights(int numberOfFlights) {
-        this.numberOfFlights = numberOfFlights;
+    public AccountState getAccountState() {
+        return accountState;
     }
 
     public void setAccountState(AccountState accountState) {
         this.accountState = accountState;
-    }
-
-    public AccountState getAccountState() {
-        return accountState;
     }
 }

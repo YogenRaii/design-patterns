@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.state_pattern.lab;
+package com.eprogrammerz.examples.gof.patterns.state.fanstate;
 
 /**
  * concrete state
@@ -6,7 +6,7 @@ package com.eprogrammerz.examples.gof.patterns.state_pattern.lab;
 public class Off implements FanState {
     @Override
     public void printState() {
-         System.out.println(" fan is off ");
+        System.out.println(" fan is off ");
     }
 
     @Override

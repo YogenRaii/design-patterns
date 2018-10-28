@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.state_pattern.lab;
+package com.eprogrammerz.examples.gof.patterns.state.fanstate;
 
 /**
  * Created by ${YogenRai} on 4/24/2016.
