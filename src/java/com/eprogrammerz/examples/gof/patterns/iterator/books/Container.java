@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.iterator_pattern.code;
+package com.eprogrammerz.examples.gof.patterns.iterator.books;
 
 /**
  * aggregate

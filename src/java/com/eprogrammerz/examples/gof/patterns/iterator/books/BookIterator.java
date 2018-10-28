@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.gof.patterns.iterator_pattern.code;
+package com.eprogrammerz.examples.gof.patterns.iterator.books;
 
 /**
  * Concrete iterator
@@ -6,7 +6,7 @@ package com.eprogrammerz.examples.gof.patterns.iterator_pattern.code;
 public class BookIterator implements Iterator {
     private BookCollection collection = new BookCollection();
     private String[] books = collection.getBooks();
-    private int index =0 ;
+    private int index = 0;
 
     @Override
     public boolean hasNext() {
@@ -15,6 +15,6 @@ public class BookIterator implements Iterator {
 
     @Override
     public Object next() {
-        return this.hasNext() ? books[index++]:null;
+        return this.hasNext() ? books[index++] : null;
     }
 }
