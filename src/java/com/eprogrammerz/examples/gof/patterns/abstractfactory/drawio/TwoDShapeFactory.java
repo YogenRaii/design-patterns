@@ -5,10 +5,10 @@ package com.eprogrammerz.examples.gof.patterns.abstractfactory.drawio;
  */
 public class TwoDShapeFactory extends AbstractFactory {
     @Override
-    GeometricShape getShape(String name) {
-        if (name.equals("line")) {
+    GeometricShape getShape(ShapeType name) {
+        if (ShapeType.LINE == name) {
             return new Line();
-        } else if (name.equals("circle")) {
+        } else if (ShapeType.CIRCLE == name) {
             return new Circle();
         }
         return null;

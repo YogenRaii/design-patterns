@@ -5,8 +5,8 @@ package com.eprogrammerz.examples.gof.patterns.abstractfactory.drawio;
  */
 public class ThreeDShapeFactory extends AbstractFactory {
     @Override
-    GeometricShape getShape(String name) {
-        if (name.equals("sphere")) {
+    GeometricShape getShape(ShapeType name) {
+        if (ShapeType.SPHERE == name) {
             return new Sphere();
         }
         return null;

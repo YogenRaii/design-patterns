@@ -1,18 +1,20 @@
 package com.eprogrammerz.examples.gof.patterns.abstractfactory.drawio;
 
+import static com.eprogrammerz.examples.gof.patterns.abstractfactory.drawio.FactoryType.*;
+
 /**
  * Client
  */
 public class Application {
     public static void main(String[] args) {
         //drawing 2D shape
-        AbstractFactory factory = FactoryProvider.getFactory("2DShapeFactory");
+        AbstractFactory factory = FactoryProvider.getFactory(TWO_D_SHAPE_FACTORY);
         if (factory == null) {
             System.out.println("Factory for given name doesn't exist.");
             System.exit(1);
         }
         //getting shape using factory obtained
-        GeometricShape shape = factory.getShape("line");
+        GeometricShape shape = factory.getShape(ShapeType.LINE);
         if (shape != null) {
             shape.draw();
         } else {
@@ -20,13 +22,13 @@ public class Application {
         }
 
         //drawing 3D shape
-        factory = FactoryProvider.getFactory("3DShapeFactory");
+        factory = FactoryProvider.getFactory(THREE_D_SHAPE_FACTORY);
         if (factory == null) {
             System.out.println("Factory for given name doesn't exist.");
             System.exit(1);
         }
         //getting shape using factory obtained
-        shape = factory.getShape("sphere");
+        shape = factory.getShape(ShapeType.SPHERE);
         if (shape != null) {
             shape.draw();
         } else {
