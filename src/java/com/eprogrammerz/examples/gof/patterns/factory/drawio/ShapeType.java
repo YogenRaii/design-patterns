@@ -6,5 +6,6 @@ package com.eprogrammerz.examples.gof.patterns.factory.drawio;
 public enum ShapeType {
     LINE,
     CIRCLE,
-    RECTANGLE
+    RECTANGLE,
+    TRIANGLE
 }
