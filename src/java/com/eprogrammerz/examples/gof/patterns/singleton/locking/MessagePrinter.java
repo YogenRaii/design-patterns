@@ -15,7 +15,10 @@ public class MessagePrinter {
     public static MessagePrinter getMessagePrinter() {
         if (messagePrinter == null) {
             synchronized (LOCK) {
-                messagePrinter = new MessagePrinter();
+                // need to make sure if other thread has already instantiated the object
+                if (messagePrinter == null) {
+                    messagePrinter = new MessagePrinter();
+                }
             }
         }
         return messagePrinter;
